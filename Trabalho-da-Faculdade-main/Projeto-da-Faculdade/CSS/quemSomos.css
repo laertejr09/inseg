@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* ESTILIZAÇÃO DO CABEÇALHO DE NAVEGAÇÃO LOCALIZADO NO TOPO DO SITE */
+nav{
+    background-color: #706eff80;
+    padding: 11px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .link a{
+    color: #ffffff; 
+    position: relative; 
+    padding-bottom: 0.75em; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO EFEITO OBSERVADO AO PASSAR O MOUSE ACIMA DAS PÁGINAS RELACIONADAS*/
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(252 215 253);
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+/*  */
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DISPONÍVEL NO CANTO SUPERIOR DIREITO DA PÁGINA*/
+nav button{
+    padding: 1rem 2rem;
+    font-size: 22px;
+    color: #fff;
+    background-color: #7e66ff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5rem;
+    border: none;
+}
+
+nav button:hover{
+    background-color:  rgb(252 215 253);
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+/*  */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ESTILIZAÇÃO DO BANNER DA PÁGINA */
+
+/* BANNER DA PÁGINA */
+.background{
+    background: url(../Imagens/Banner.png);
+    width: auto;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 195px;
+    height: auto;
+    background-color: rgb(154 171 255 / 94%);    
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    padding: 60px 0px 24px 0px;
+    color: #ffffff;
+}
+
+.banner h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.frase {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 2px;
+}
+/*FIM DA ESTILIZAÇÃO DO BANNER DA PÁGINA */
+
+
+/* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL DA PÁGINA */
+#conteudoPrincipal{
+    margin-top: 15px;
+    height: 825px;
+}
+
+.topico-1{
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #e6e6e6e0;
+    border-radius: 10px;
+}
+
+.topico-1 p{
+    font-size: 20PX;
+    text-align: justify;
+    font-weight: 400;
+}
+/*  */
+
+.topico-2{
+    margin-top: 3rem; 
+    display: flex; 
+}
+
+.topico-2 .card-2{
+    padding: 1rem;
+}
+
+.topico-2 .card-2 h2{
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.topico-2 .card-2 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.img.card-2{
+    width: auto;
+    height: auto;
+}
+
+.img.card-2 img{
+    margin-top: -3rem; 
+}
+/*  */
+
+.topico-3{
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    background-color: #e6e6e6e0;
+    border-radius: 10px;
+}
+
+.topico-3 p{
+    font-size: 21px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Estilização do rodapé da página */
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+
+footer .logo img{
+    width: 150px;
+}
+
+
+footer .conteudo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer .separador{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+/*  */
+
+
+/* ATRIBUTO "MEDIA QUERIE". USADO PRA ADAPTAR O SITE CONFORME A LARGURA MÁXIMO DE UM DISPOSITIVO. 
+EX: A LARGURA MAXIMA(MAX-WIDTH) DE UM DISPOSITIVO É 1200PX. TRABALHE EM CIMA DESSAS TRÊS LARGURAS MÁXIMAS JÁ ESTABELECIDAS. 
+PARA QUEM FOR FAZER ESSA PARTE DO TRABALHO, OPTE POR TIRAR IMAGENS QUE NÃO FOREM IMPORTANTES ATRAVÉS DO ATRIBUTO "DISPLAY: NONE". */
+@media screen and (max-width: 1200px) {
+    
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+     
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}

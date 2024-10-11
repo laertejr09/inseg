@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>INSEGRJ - Infância Segura </title> 
+        <link rel="icon" type="images/x-icon" href="../Imagens/Logo.png"> <!-- Favicon do site --> 
+        
+        <!-- Fontes utilizadas no site e Link CSS --> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/quemSomos.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poetsen+One&family=Reddit+Sans+Condensed:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet"> 
+    </head> 
+    
+    <body> 
+        
+      <!-- TOPO DO SITE -->
+      <nav>
+        <div class="logo">
+            <a href="../HTML/home.html">
+                <img src="../Imagens/Logo.png" alt="Logo do site">
+            </a>
+        </div>
+
+        <!-- Páginas relacionadas da página --> 
+        <ul class="nav-links">
+            <li class="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+            <li id="link1" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+            <li id="link2" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+            <li id="link3" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+          </ul>
+         
+          <!-- BOTÃO DE DOAÇÃO -->
+          <a href="../HTML/doar.html">
+            <button>Doar</button> </a>
+            <button id="menuButton" onclick="openMenu()">
+                <i class='bx bx-menu'></i>
+            </button>
+      </nav>
+
+        <!-- Banner da página -->
+        <section id="banner">
+            <div class="container">
+                <div class="background"> 
+                    <div class="banner">     
+                        <h2 class="mainTitle"> Sobre nós </h2>
+                        <p class="frase"> Conheça mais sobre nosso propósito e valores!</p>
+                    </div>
+                </div>   
+            </div>             
+        </section>
+
+        <!-- Conteúdo principal da página -->
+        <main id="conteudoPrincipal">
+            <div class="container">
+                <div class="topico-1">
+                    <h1> Sobre nós: </h1>
+                    <p class="subtopicos">  A INSEG - Iniciativa Infância Segura é uma proposta criada com o objetivo de servir a comunidade e fazer a diferença na sociedade. Surgindo como um projeto acadêmico da UNISUAM, o nosso foco é o desenvolvimento de um sistema humanizado e acessível que possibilite a reportagem e busca ativa de crianças e adolescentes desaparecidos no estado do Rio de janeiro.
+                    </p>
+    
+                </div>
+                    
+                <section class="container">
+                    <div class="topico-2">
+                          <div class="card-2">
+                            <h2> Nossos valores</h2>
+                            <p> 
+                                Nossos valores são fundamentais para a condução do nosso trabalho diário e servem como alicerce para todas as nossas ações e decisões. Valorizamos a empatia, pois entendemos a dor das famílias e nos esforçamos para ser um suporte eficaz e sensível em tempos de incerteza. O respeito é inerente ao nosso projeto, pois tratamos todos os casos com a seriedade e privacidade que merecem. Oferecendo acolhimento às famílias e à comunidade, garantindo um ambiente seguro e solidário para aqueles que buscam ajuda. Dignidade é a base sobre a qual cada criança e adolescente é visto, 
+                                reconhecendo seus direitos e a importância de sua reintegração segura e saudável à sociedade.
+                            </p>
+                          </div>
+              
+                          <div class="img card-2">
+                          <img src="../Imagens/journal-women-hugging-and-supporting-each-other.png" alt="Mapa">
+                          </div>
+              
+                    </div>
+                  </section>
+
+                <div class="topico-3"> 
+                    <h1> Nosso propósito:</h1>
+                     <p class="subtopicos">O nosso propósito é primordialmente atuar como um catalisador de esperança e ação na busca de crianças e adolescentes desaparecidos no Rio de janeiro. Por meio de esforços colaborativos e o poder da informação compartilhada, dedicamo-nos a oferecer um recurso confiável e compreensivo para famílias e autoridades, proporcionando suporte, visibilidade e uma rede de vigilância que abrange a comunidade como um todo. Estamos comprometidos a transformar a angústia da incerteza em ações concretas que possam restaurar o bem-estar e a união dessas famílias. </p> 
+                </div>
+            </div>
+        </main>
+        
+        <!-- Rodapé da página -->
+        <footer>
+            <div class="conteudo-principal">
+              <div class="logo">
+                <a href="../HTML/home.html">
+                    <img src="../Imagens/Logo.png" alt="Logo do site">
+                </a>
+            </div>
+            
+            <ul class="footer-links">
+              <li id="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+              <li id="link" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+              <li id="link" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+              <li id="link" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+              <li id="link" class="link"><a href="../HTML/doar.html">Doar</a></li>
+            </ul>
+            
+            </div>
+            <div class="separador"></div> 
+          </footer>
+
+          <script src="../JS/script-navbar.js"></script>
+
+    </body> 
+    </html> 

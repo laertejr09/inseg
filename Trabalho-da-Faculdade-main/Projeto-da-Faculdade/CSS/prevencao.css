@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* ESTILIZAÇÃO DO CABEÇALHO DE NAVEGAÇÃO LOCALIZADO NO TOPO DO SITE */
+nav{
+    background-color: #706eff80;
+    padding: 11px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .link a{
+    color: #ffffff; 
+    position: relative; 
+    padding-bottom: 0.75em; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO EFEITO OBSERVADO AO PASSAR O MOUSE ACIMA DAS PÁGINAS RELACIONADAS*/
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(252 215 253);
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+/*  */
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DISPONÍVEL NO CANTO SUPERIOR DIREITO DA PÁGINA*/
+nav button{
+    padding: 1rem 2rem;
+    font-size: 22px;
+    color: #fff;
+    background-color: #7e66ff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5rem;
+    border: none;
+}
+
+nav button:hover{
+    background-color:  rgb(252 215 253);
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+/*  */
+
+/* FIM DA ESTILIZAÇÃO DO CABEÇALHO */
+
+/* ESTILIZAÇÃO DA PARTE PRINCIPAL DA PÁGINA */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 11px;
+}
+
+header{
+    display: flex;
+    gap: 2rem;
+}
+
+.bloco{
+    width: auto;
+    float: left;
+    
+    h2{
+        font-size: 52px;
+        padding-top: 3%;
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    span{
+        font-weight: 700;
+    }
+
+    .btn.btn-primary a{
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }   
+
+    .btn.btn-primary{
+        display: flex;
+        background-color: #7e66ff;
+        width: 275px; 
+    }
+
+
+    a{
+        margin-bottom: 8px;
+    }
+}
+
+.bloco img{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+}
+/*  */
+
+/* ESTILIZAÇÃO DA PRIMEIRA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao{
+    margin-top: 1rem; 
+    display: flex; 
+    gap: 9rem;
+}
+
+.seçao .card{
+    padding: 1rem
+}
+
+.seçao .card h2{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Chelsea Market', Arial, Helvetica, sans-serif;
+}
+
+.img-card{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.img-card img{
+    margin-top: 3rem; 
+}
+/* FIM DA SEÇAO 1 DE BLOCOS */
+
+
+/* ESTILIZAÇÃO DA SEGUNDA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao-2{
+    display: flex;
+    padding: 1rem;
+    margin-top: 6rem;
+    gap: 3rem;
+}
+
+.seçao-2 h2{
+    font-size: 3rem;
+    line-height: 3rem;
+    
+}
+
+.seçao-2 p{
+    margin-top: 1.7rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    
+}
+
+.seçao-2 .texto .bold{
+    font-weight: bold;
+}
+
+.seçao-2 .texto .realce{
+    margin-left: 8px;
+}
+/* FIM DA SEÇAO 2 DE BLOCOS */
+
+
+/* ESTILIZAÇÃO DA TERCEIRA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao-3{
+    margin-top: 6rem;
+}
+
+.seçao-3 .titulos-principais{
+    text-align: center;
+}
+
+.seçao-3 h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.seçao-3 .titulos-principais p{
+    font-size: 18px;
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
+
+.lista{
+    padding: 1rem;
+    list-style: none;
+    text-align: justify;
+}
+
+.lista .pauta img{
+    margin-bottom: 0.8px;
+}
+
+.titulo-da-lista{
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.lista p{
+    margin-top: 0.3rem; 
+    font-size: 20px; 
+    margin-bottom: 1rem;
+}
+
+.pauta{
+    margin-top: 1rem;
+    background-color: #7e7e7e52;
+    padding: 1rem;
+    border-radius: 12px;
+}
+/*FIM DA TERCEIRA SEÇÃO*/
+
+
+/* ESTILIZAÇÃO DO RODAPÉ  */
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+
+footer .logo img{
+    width: 150px;
+}
+
+footer .conteudo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer .separador{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+/* FIM DA ESTILIZAÇÃO DO RODAPÉ */
+
+
+/* ATRIBUTO "MEDIA QUERIE". USADO PRA ADAPTAR O SITE CONFORME A LARGURA MÁXIMO DE UM DISPOSITIVO. 
+EX: A LARGURA MAXIMA(MAX-WIDTH) DE UM DISPOSITIVO É 1200PX. TRABALHE EM CIMA DESSAS TRÊS LARGURAS MÁXIMAS JÁ ESTABELECIDAS. 
+PARA QUEM FOR FAZER ESSA PARTE DO TRABALHO, OPTE POR TIRAR IMAGENS QUE NÃO FOREM IMPORTANTES ATRAVÉS DO ATRIBUTO "DISPLAY: NONE". */
+@media screen and (max-width: 1200px) {
+    
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+     
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+}

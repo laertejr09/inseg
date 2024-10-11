@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>INSEGRJ - Infância Segura </title> 
+        <link rel="icon" type="images/x-icon" href="../Imagens/Logo.png"> <!-- Favicon do site --> 
+        
+        <!-- Fontes utilizadas no site e Link CSS --> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/prevencao.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poetsen+One&family=Reddit+Sans+Condensed:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">  
+    </head> 
+    
+    <body> 
+       
+      <!-- CABEÇALHO DO SITE -->
+      <nav>
+        <div class="logo">
+            <a href="../HTML/home.html">
+                <img src="../Imagens/Logo.png" alt="Logo do site">
+            </a>
+        </div>
+
+        <!-- Páginas relacionadas da página --> 
+        <ul class="nav-links">
+            <li class="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+            <li id="link1" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+            <li id="link2" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+            <li id="link3" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+          </ul>
+         
+          <!-- BOTÃO DE DOAÇÃO -->
+          <a href="../HTML/doar.html">
+            <button>Doar</button> </a>
+            <button id="menuButton" onclick="openMenu()">
+                <i class='bx bx-menu'></i>
+            </button>
+      </nav>
+          
+    <div class="container"> 
+        <!--Primeiro bloco relacionado que contêm informações adicionais--> 
+        <div class="seçao">
+              
+                <div class="card"> 
+                <!--Título do bloco --> 
+                <h2> 
+                    "É dever da família, da comunidade, da sociedade e do poder público assegurar a efetivação dos direitos referentes à vida, à saúde, à alimentação, à educação, ao esporte, ao lazer, à cultura, à dignidade e ao respeito da criança e do adolescente."
+                </h2>
+              </div>
+  
+              <div class="img-card">
+              <img src="../Imagens/3d-casual-life-lego-bricks-2.png" alt="Peças de montar">
+              </div>
+        </div>
+    </div>
+
+      <section class="container">
+
+        <!--Segundo bloco relacionado que contêm informações adicionais--> 
+        <div class="seçao-2">
+                
+                <div class="texto">
+                     
+                    <!--Título do bloco --> 
+                    <h2> 
+                        Confira nossas dicas e veja como se prevenir!
+                    </h2>
+                    
+                    <p> 
+                        Não espere pelo pior,<span class="bold"> previna-se agora: </span> 
+                        <span class="realce"> veja nossas dicas e aja com sabedoria!</span>  <!-- Pequena frase em negrito para chamar atenção-->
+                    </p>
+                
+                    <!-- ÍCONE DE SETA RETIRADO DO FRAMEWORK BOOTSTRAP -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5"/>
+                    </svg>                
+                </div>
+  
+                <!-- VÍDEO COM DICAS DE PREVENÇÕES FEITO COMO PARTE DO TRABALHO -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gbf3ZqPV8Rw?si=J0MNyYr9x-wIetiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                </div>
+        </div>
+     </section>
+
+    <section class="container">
+
+        <!--Terceiro bloco relacionado que contêm informações adicionais--> 
+        <div class="seçao-3">
+            <div class="titulos-principais">
+                <h3> Cheque mais dicas abaixo:</h3> <!--Título do bloco--> 
+                <p> Todo cuidado é pouco. Confira outras dicas para manter-se protegido(a).</p>
+            </div>
+        
+            <!--Lista com dicas de prevenções--> 
+            <ul class="lista">
+                <li class="pauta">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABkElEQVR4nO2WTUoDQRCFPxSiyKggeArRyQk8gHiERFciHkFvMKvgBaLZKLgT40oPYHIBxwuYbNzFmKgQaaiBMdRkutvRjfOgNsOr6tddP1NQosRsVIAqUAMioA10gSegD7yJ9eVbVziR+FQlhjOWgRYwBiY/NBPjHAhcBLQKOHjazmwPXyjo5tM2kti5qP7C4YmFNgLqiuMH0AA2JJd1z1cyhZmLSHE8VHjHHgJM7FzcKo5aBa8Cn44CTIvmoqM4rim8eWDgKODBRkCsOO4ovH2PFDzaCOgpjhcK785DwLONgJHiaHK9OcVbBK4cBQxtBAwznM2NtTq4TnEGOYX56puCidiBwl8ScabH54AV4AR4901BPEOAGT7bNkGAPd8i7OTk8cVSRODbhm2LYhpnpCONLd9BFDlU9b3SHQlOfUdxzbG1zI/qEtgF1uXpjzK6wepnFHoMGFvLeq1vqGQMoz9bSJAdrmgBTRwQyA5X1FLadF1K0+kIU2v5jcyJWCbmUKwn3zrCSdby0HctL/F/8AUotK22TSC5qAAAAABJRU5ErkJggg==">
+                    <div class="titulo-da-lista">Contate as autoridades:</div>
+                    <p>Reporte o desaparecimento imediatamente para a delegacia de polícia mais próxima de sua residência e indique todas as características e detalhes da vítima, incluindo marcas de nascimento, tatuagens, estado psicológico, último local visto, ficha criminal, situação familiar, etc.</p>
+                </li>
+
+                <li class="pauta">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFUlEQVR4nO2WzWrCUBCFv0031b5BXbtQaArS1IV7pU/XnwdwaxF8p8YuhFbUla5uGTiBIvYmlEmK1QMHwszc+bjJ5HLhrFPUAzAHgpMzYFQGnDlCc7+VAYeKfHzgLfAIpEBDtudnYFcVeA7cRNYkJQayUId2mkNbwBTYyDOgrdxtwc4Ltb/AXm8O/TyQXypnevEE3yk+jTR9Vc29J7ip+CbSdK2aq7rBK9U0PMGp4rNI04lqUk/wk+JtDdJ+/gO4Vs3Y+3dKlGtpkNby5Bv0Aniv4gBJImsMauoAC09w0OFgx2NfA3epbzrWTg1q6v4A/zW4yAtBTb06wUFwgw7qBgfv4Qp1gLO/uvqMnOEGHZYBn/W/9AW9cpannv3/6QAAAABJRU5ErkJggg==">
+                    <div class="titulo-da-lista">Triagem de informações:</div>
+                    <p>Junte o máximo de detalhes possíveis sobre a vítima, incluindo fotografias, redes sociais, número de telefone, locais que frequentava, etc. Essas informações serão de grande importância para as autoridades agirem com precisão.</p>
+                </li>
+
+                <li class="pauta">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAh0lEQVR4nO2QwQmEMBBF380itCAtRrEEyxO86Fm97Nawe40EIgyCYhJFgz74MBD4bzLwJCpAmVRBCSKgAAYh6IHcvHmRAJ0oXqYFYp/Nu41yKXH6SbmjfI4+oTWNhaB2EfwtBD8XgbLMKyC8E4WL8sz1gjVGUaLnw/kKwecMQWYkujw9Q3BPJvHFo8d1v1dEAAAAAElFTkSuQmCC">
+                    <div class="titulo-da-lista">Notifique parentes e amigos:</div>
+                    <p>Notifique o paradeiro para os amigos, membros da família e vizinhos da vítima. Eles poderão ajudar com informações que possivelmente facilitarão a solucionar o paradeiro.</p>
+                </li>
+
+                <li class="pauta">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8UlEQVR4nO3UzSqFURTG8d89+MjEkDIhqTNhZGRkxCXIxUgpA0MmJ/fiFuiUEqeUieQc5NVbS4l93i97eP711K691vPU3mtvpnRgFke4wQh3OMfSj5plXMTeKGrLnpk683UMUST0hgMcxjpVU/auTTKfqzAvQp+hqpphnMIfTmoaixY6TgXcZgwYpALeMwa8pgIGGQOuUwFnGQNOUwG9BhNSNFDpsTFpVC8zBPRVMB+vs6v5AxbUsBXPv8vkbGrIbsux/cCeluxj3MB83MX8m208V5i/YMc/6eExYf4U95WFlV9/1T1WZWYRV6FyPUUWvgCLS/fxbQk+fQAAAABJRU5ErkJggg==">
+                    <div class="titulo-da-lista">Procure apoio psicológico profissional:</div>
+                    <p>Muita das vezes, o desaparecimento de um conhecido torna-se também um desafio para quem está sofrendo com o paradeiro. Procure grupos sociais de suporte e atendimento psicológico para obter ajuda emocional.</p>
+                </li>
+
+                <li class="pauta">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAX0lEQVR4nO2VSwrAIAwF53hKb21vor1HiguXDS0YpPIG3i4wEPIBIXbnAC7AJqcB2RO3AOlI9cQWnEckNrUaDRdaJ3RA7M3JXPYkcpC8AskTi8H5oa29dom4zBSL/3IDOG2Rzq67348AAAAASUVORK5CYII=">
+                    <div class="titulo-da-lista">Divulgue em jornais e em canais de TV:</div>
+                    <p>Quanto maior a divulgação, maiores as chances de encontrar a vítima. É importante que as fotos, os dados e o telefone de contato estejam visíveis para fins de possíveis informações.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+     
+    <!--Rodapé do site--> 
+    <footer>
+        <div class="conteudo-principal">
+          <div class="logo">
+            <a href="../HTML/home.html">
+                <img src="../Imagens/Logo.png" alt="Logo do site">
+            </a>
+        </div>
+        
+        <!--Páginas relacionadas do site disponíveis no rodapé--> 
+        <ul class="footer-links">
+          <li id="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+          <li id="link" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+          <li id="link" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+          <li id="link" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+          <li id="link" class="link"><a href="../HTML/doar.html">Doar</a></li>
+        </ul>
+        
+        </div>
+        <div class="separador"></div> 
+      </footer>
+
+      <script type="text/javascript" src="../JS/script-navbar.js"></script>
+
+            
+</body>       
+</html>

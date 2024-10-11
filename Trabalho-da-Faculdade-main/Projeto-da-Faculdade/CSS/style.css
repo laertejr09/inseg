@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&family=Poetsen+One&family=Reddit+Sans+Condensed:wght@200..900&family=Sedan+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3{
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.5em;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+    border: 5px solid #e8e8e7;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+/* Progress */
+.form-box .progress{
+    position: relative;
+    padding: 1em;
+}
+
+.progress ul .progress-steps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.progress ul .progress-steps li{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.progress ul .progress-steps li > span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+
+@media screen and (min-width: 768px){
+    .form-box .progress{
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 3em;
+    }
+}

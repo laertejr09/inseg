@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+body{ font-family: "Montserrat", Arial, Helvetica, sans-serif; } 
+
+.background{
+    background-color: #706eff80;
+    width: 100%;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO DE NAVEGAÇÃO LOCALIZADO NO TOPO DO SITE */
+nav{
+  background-color: #706eff80;
+  padding: 11px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo,
+footer .logo{
+  display: flex;
+  align-items: center;
+}
+
+nav .link a{
+  color: #ffffff; 
+  position: relative; 
+  padding-bottom: 0.75em; 
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO EFEITO OBSERVADO AO PASSAR O MOUSE ACIMA DAS PÁGINAS RELACIONADAS*/
+.link a::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(252 215 253);
+  transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+  width: 100%;
+}
+/*  */
+
+nav .logo a,
+footer .logo a{
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+  width: 150px;
+}
+
+nav ul{
+  display: flex;
+  gap: 40px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DISPONÍVEL NO CANTO SUPERIOR DIREITO DA PÁGINA*/
+nav button{
+  padding: 1rem 2rem;
+  font-size: 22px;
+  color: #fff;
+  background-color: #7e66ff;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 5rem;
+  border: none;
+}
+
+nav button:hover{
+  background-color:  rgb(252 215 253);
+}
+
+nav button#menuButton{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 7px;
+}
+/*  */
+
+#banner{
+    padding-top: 15px;
+    background-color: #fff7eccc;
+    overflow: hidden;
+    padding: 25px 15px;
+    margin-bottom: 100px;
+}
+
+.bloco{
+    width: 50%;
+    float: left;
+
+    img{
+        width: 60%;
+        height: auto;
+        margin-left: 195px;
+        position: relative;
+    }
+    
+    h2{
+        font-size: 41px
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    span{
+        font-weight: 700;
+    }
+
+    .btn.btn-primary a{
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }   
+
+    .btn.btn-primary{
+        background-color: #7e66ff;
+        width: 350px; 
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 11px;
+}   
+
+/*PERSONALIZAÇÃO DO CARROSSEL DE FOTOS */
+
+.wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    background: #adadadc7;    
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    height: 150px;
+}
+
+.carousel a{
+  text-align: center;
+  text-decoration: none;
+}
+  
+  .card .img img {
+    height: 170px;
+    object-fit: cover;
+}
+  
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+    padding-left: 6px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+/* FIM DA SEÇÃO DO CARROSEL DE BLOCOS */
+  
+
+/* ATRIBUTO "MEDIA QUERIE". USADO PRA ADAPTAR O SITE CONFORME A LARGURA MÁXIMO DE UM DISPOSITIVO. 
+EX: A LARGURA MAXIMA(MAX-WIDTH) DE UM DISPOSITIVO É 1200PX. TRABALHE EM CIMA DESSAS TRÊS LARGURAS MÁXIMAS JÁ ESTABELECIDAS. 
+PARA QUEM FOR FAZER ESSA PARTE DO TRABALHO, OPTE POR TIRAR IMAGENS QUE NÃO FOREM IMPORTANTES ATRAVÉS DO ATRIBUTO "DISPLAY: NONE". */
+@media screen and (max-width: 1200px) {
+    
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+     
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}

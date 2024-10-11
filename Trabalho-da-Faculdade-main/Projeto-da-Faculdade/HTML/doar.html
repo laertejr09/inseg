@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>INSEGRJ - Infância Segura </title> 
+        <link rel="icon" type="images/x-icon" href="../Imagens/Logo.png"> 
+        
+        <!-- Fonte do site e Link CSS --> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/doar.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poetsen+One&family=Reddit+Sans+Condensed:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Lakki+Reddy&family=Mynerve&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    </head> 
+    
+    <body> 
+       <!-- TOPO DO SITE -->
+       <nav>
+        <div class="logo">
+            <a href="../HTML/home.html">
+                <img src="../Imagens/Logo.png" alt="Logo do site">
+            </a>
+        </div>
+          <ul class="nav-links">
+            <li class="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+            <li id="link1" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+            <li id="link2" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+            <li id="link3" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+          </ul>
+         
+          <a href="../HTML/doar.html">
+            <button>Doar</button> </a>
+            <button id="menuButton" onclick="openMenu()">
+                <i class='bx bx-menu'></i>
+            </button>
+          
+         
+      </nav>
+
+    <!-- BANNER DA PÁGINA -->
+    <div class="container">
+        <section id="banner">
+                <div class="background"> 
+                    <div class="textos">     
+                        <h2 class="mainTitle"> Doações </h2>
+                        <p class="frase"> O amor de uma comunidade pode superar qualquer distância!</p>
+                    </div>
+                </div>      
+        </section>
+    </div>         
+
+    <header class="container">
+        <div class="bloco-1">
+          <h2> Compartilhe sua generosidade e ajude a reconstruir esperanças perdidas! </h2>
+          <p>
+            Ao contribuir com o nosso trabalho, 
+            você se torna parte de uma comunidade comprometida em trazer segurança e conforto para aqueles que mais precisam. 
+            Sua generosidade nos permite ampliar nossos esforços de busca e apoio às famílias afetadas.
+          </p>
+            
+          <p>
+            Sua doação não é apenas um gesto de solidariedade, mas uma demonstração de esperança e amor ao próximo.
+             Juntos, podemos fazer a diferença e trazer sorrisos de volta aos rostos que estão sofrendo.
+          </p>     
+        </div>
+        
+        <div class="bloco-1">
+              <img src="../Imagens/mirage-629.png" alt="Figura ilustrada de bloco">
+        </div>  
+    </header>
+
+    
+
+    <section class="container">
+
+        <p class="titulo">
+            Veja como contribuir com a nossa iniciativa:
+        </p>
+        <div class="blocos-de-texto">
+            <div class="card">
+                <div class="content">
+                    <h4>Doação online</h4>
+                    <p>
+                       Clique no botão para acessar o Paypal e doar. Aceitamos qualquer valor.
+                    </p>
+                </div>
+                
+                <div class="botao"> 
+                <!-- FEITO COM O FRAMEWORK BOOTSTRAP -->
+                    <ul>
+                        <li>
+                            <div class="icone">
+                                <i class="bi bi-paypal"></i>
+                            </div>
+                            
+                            <div class="textoBotao">
+                                <a href="https://www.paypal.com/donate/?hosted_button_id=WRE6UL8AGNBAW" target="_blank">  
+                                    Clique aqui para ajudar a nossa iniciativa 
+                                </a>
+                            </div>       
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            
+            <div class="card">
+                <div class="content">
+                    <h4> Qr Code</h4>
+                    <p>
+                        Use o seu dispositivo para escanear o Qr Code e doar. Aceitamos qualquer valor.
+                    </p>
+                   
+                </div>
+                <img class="qrcode" src="../Imagens/Qr Code do Paypal.png" alt="Qr code que encaminhará para o paypal de doação.">
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer>
+        <div class="conteudo-principal">
+          <div class="logo">
+            <a href="../HTML/home.html">
+                <img src="../Imagens/Logo.png" alt="Logo do site">
+            </a>
+        </div>
+        
+        <ul class="footer-links">
+          <li id="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+          <li id="link" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+          <li id="link" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+          <li id="link" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+          <li id="link" class="link"><a href="../HTML/doar.html">Doar</a></li>
+        </ul>
+        
+        </div>
+        <div class="separador"></div> 
+    </footer> 
+         
+    <script src="../JS/script-navbar.js"></script>
+
+ </body> 
+ </html> 

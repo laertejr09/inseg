@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO DE NAVEGAÇÃO LOCALIZADO NO TOPO DO SITE */
+nav{
+    background-color: #706eff80;
+    padding: 11px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .link a{
+    color: #ffffff; 
+    position: relative; 
+    padding-bottom: 0.75em; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO EFEITO OBSERVADO AO PASSAR O MOUSE ACIMA DAS PÁGINAS RELACIONADAS*/
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(252 215 253);
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+/*  */
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DISPONÍVEL NO CANTO SUPERIOR DIREITO DA PÁGINA*/
+nav button{
+    padding: 1rem 2rem;
+    font-size: 22px;
+    color: #fff;
+    background-color: #7e66ff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5rem;
+    border: none;
+}
+
+nav button:hover{
+    background-color:  rgb(252 215 253);
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+/*  */
+
+/* FIM DA ESTILIZAÇÃO DO CABEÇALHO */
+
+
+#banner{
+    padding-top: 15px;
+    background-color: #fff7eccc;
+    overflow: hidden;
+    padding: 25px 15px;
+    margin-bottom: 100px;
+    /* height: 783px; */
+}
+
+.bloco{
+    width: 50%;
+    float: left;
+
+    img{
+        width: 60%;
+        height: auto;
+        margin-left: 195px;
+        position: relative;
+    }
+    
+    h2{
+        font-size: 41px
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    span{
+        font-weight: 700;
+    }
+
+    .btn.btn-primary a{
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }   
+
+    .btn.btn-primary{
+        background-color: #7e66ff;
+        width: 350px; 
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 11px;
+    padding-top: 2rem;
+}   
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+
+.row .left{
+    overflow: hidden;
+}
+
+.row .left img{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .right{
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+.row .right .content{
+    padding-left: 20px;
+}
+
+.content h2{
+    font-size: 32px;
+}
+
+.content h3{
+    font-size: 18px;
+    margin-top: 2rem;}
+
+.lista{
+    list-style: none;
+    padding-top: 0.8rem;
+    line-height: 1.5rem
+}
+
+.lista-2{
+    list-style: none;
+    padding-top: 0.1rem;
+    line-height: 1.5rem
+}
+
+@media(max-width: 991px){
+    .row .right .content{
+        padding-left: 0;
+
+}
+}
+
+@media(max-width: 768px){
+    .row{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+
+}
+}

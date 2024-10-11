@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO DE NAVEGAÇÃO LOCALIZADO NO TOPO DO SITE */
+nav{
+    background-color: #706eff80;
+    padding: 11px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .link a{
+    color: #ffffff; 
+    position: relative; 
+    padding-bottom: 0.75em; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ESTILIZAÇÃO DO EFEITO OBSERVADO AO PASSAR O MOUSE ACIMA DAS PÁGINAS RELACIONADAS*/
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(252 215 253);
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+/*  */
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DISPONÍVEL NO CANTO SUPERIOR DIREITO DA PÁGINA*/
+nav button{
+    padding: 1rem 2rem;
+    font-size: 22px;
+    color: #fff;
+    background-color: #7e66ff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5rem;
+    border: none;
+}
+
+nav button:hover{
+    background-color:  rgb(252 215 253);
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+/*  */
+
+/* FIM DA ESTILIZAÇÃO DO CABEÇALHO */
+
+
+/* ESTILIZAÇÃO DA PARTE PRINCIPAL DA PÁGINA */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 11px;
+}
+
+.main{
+    background-color: #e8e9e9a6;
+    padding: 11px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .bloco-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .bloco-esquerda h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .bloco-esquerda p span{
+    font-weight: 700;
+}
+
+.main .bloco-esquerda p{
+    color: #1c1e53;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.link-prevencao{
+    padding-bottom: 0.75em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.main .bloco-esquerda .btn.btn-primary{
+    margin-top: 18px;
+    display: inline-flex;
+    background-color: #7e66ff;
+    padding: 1rem 5rem;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* FIM DA PARTE PRINCIPAL  */
+
+/* ESTILIZAÇÃO DA PRIMEIRA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao{
+    margin-top: 4rem; 
+    display: flex; 
+    gap: 15rem;
+}
+
+.seçao .card{
+    padding: 1rem;
+}
+
+.seçao .card h2{
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Chelsea Market';
+}
+
+.seçao .card p{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.seçao .card .fonte{
+    font-size: 15px;
+}
+
+/* FIM DA SEÇÃO 1 */
+
+/* ESTILIZAÇÃO DA SEGUNDA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao-2{
+    margin-top: 3rem; 
+    display: flex; 
+    gap: 15rem;
+}
+
+.seçao-2 .card-2{
+    padding: 1rem;
+    background-color: #3a648fc9;
+    border-radius: 15px;
+}
+
+.seçao-2 .card-2 h2{
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Chelsea Market', Arial, Helvetica, sans-serif;
+}
+
+.seçao-2 .card-2 p{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: white;
+}
+
+.seçao-2 .card-2 a{
+    color: #fff;
+}
+
+.seçao-2 .card-2 a:hover{
+    color: #88c3f3;
+}
+
+.img.card-2{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.img.card-2 img{
+    margin-top: -3rem; 
+}
+
+/* FIM DA SEÇAO 2 */
+
+/* ESTILIZAÇÃO DA TERCEIRA SEÇÃO RELACIONADA DA PÁGINA */
+.seçao-3{
+    margin-top: 1rem; 
+    display: inline-flex; 
+    gap: 1rem;
+    background-color: antiquewhite;
+    border-radius: 12px;
+}
+
+.seçao-3 .card-3{
+    padding: 1rem;
+}
+
+.seçao-3 .card-3 h2{
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Chelsea Market', Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+}
+
+.seçao-3 .card-3 span{
+    font-weight: 700;
+}
+
+.seçao-3 .card-3 p{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.contactButton {
+    background: #7079f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    height: 2.8em;
+}
+
+.contactButton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #5566c2;
+  }
+  
+.contactButton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #5566c2;
+  }
+  
+.contactButton a{
+    color: #ffffff;
+} 
+
+/*FIM DA TERCEIRA SEÇÃO*/
+
+
+/* ESTILIZAÇÃO DO RODAPÉ  */
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .conteudo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-links{
+    display: flex;
+    gap: 2rem;
+}
+
+footer .separador{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+/* FIM DA ESTILIZAÇÃO DO RODAPÉ */
+
+
+/* ATRIBUTO "MEDIA QUERIE". USADO PRA ADAPTAR O SITE CONFORME A LARGURA MÁXIMO DE UM DISPOSITIVO. 
+EX: A LARGURA MAXIMA(MAX-WIDTH) DE UM DISPOSITIVO É 1200PX. TRABALHE EM CIMA DESSAS TRÊS LARGURAS MÁXIMAS JÁ ESTABELECIDAS. 
+PARA QUEM FOR FAZER ESSA PARTE DO TRABALHO, OPTE POR TIRAR IMAGENS QUE NÃO FOREM IMPORTANTES ATRAVÉS DO ATRIBUTO "DISPLAY: NONE". */
+@media screen and (max-width: 1200px) {
+    
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+     
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav{
+        padding: 11px 85px;
+        gap: 15px;
+    }
+
+    nav .link a{
+        font-size: 13px;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+}

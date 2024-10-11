@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>INSEGRJ - Infância Segura </title> 
+        <link rel="icon" type="images/x-icon" href="../Imagens/Logo.png"> <!-- Favicon do site --> 
+        
+        <!-- Fontes utilizadas no site e Link CSS --> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/contato.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poetsen+One&family=Reddit+Sans+Condensed:wght@200..900&family=Sedan+SC&display=swap" rel="stylesheet">     
+    </head> 
+    
+        <body> 
+            
+          <!-- TOPO DO SITE -->
+          <nav>
+            <div class="logo">
+                <a href="../HTML/home.html">
+                    <img src="../Imagens/Logo.png" alt="Logo do site">
+                </a>
+            </div>
+
+            <!-- Páginas relacionadas da página --> 
+            <ul class="nav-links">
+                <li class="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+                <li id="link1" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+                <li id="link2" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+                <li id="link3" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+              </ul>
+             
+              <!-- BOTÃO DE DOAÇÃO -->
+              <a href="../HTML/doar.html">
+                <button>Doar</button> 
+             </a>
+                <button id="menuButton" onclick="openMenu()">
+                    <i class='bx bx-menu'></i>
+                </button>
+          </nav>
+
+        <!-- CONTAINER PRINCIPAL DO SITE QUE ABRANGE TODO O FORMULÁRIO DA PÁGINA -->
+        <main class="container">
+            <div class="bloco">
+              <h1> Entre em contato </h2>
+              <h2> Fale conosco preenchendo o formulário abaixo:</h2>
+              
+              <form id="formularios">
+                <label> Nome completo: </label> 
+                <input type="text" name="nome" placeholder="Digite seu nome." minlength="15" maxlength="60" required > 
+                
+                <label> Email: </label> 
+                <input type="email" name="email" placeholder="Digite seu email." required>
+                
+                <label> Telefone: </label> 
+                <input type="tel" name="telefone" maxlength="11"   placeholder="Digite seu telefone." required> 
+                
+                <label> Assunto: </label> 
+                <input type="text" name="assuntoDaMensagem" placeholder="Digite o assunto da mensagem."> 
+                
+                <label> Mensagem: </label> 
+                <textarea name="campoDeMensagem" class="areadetexto" placeholder="Digite a mensagem que deseja enviar." required> </textarea> 
+            
+                <button class="botao" type="submit"> Enviar  </button>
+            </form>
+            </div>
+            
+            <div class="bloco">
+                  <img src="../Imagens/silky-dialogue-in-the-messenger - Copia.png" alt="Balões de mensagem">
+            </div>       
+        </main>
+        <!-- FIM DO BLOCO DE FORMULÁRIO -->
+
+        <!-- SEÇÃO DO SITE QUE ABRANGE OS "CONTATOS ADICIONAIS" DO SITE -->
+        <section class="container">
+          <div class="titulos">
+                <h3> Contatos úteis</h3>
+                <p>
+                    Veja contatos que podem ser úteis para você!  
+                </p>
+          </div>  
+            <div class="blocos-adicionais">
+
+                <div class="card">
+                    <h2> E-mail para contato</h2>
+                    <p>
+                        iniciativainfanciasegura@gmail.com
+                    </p>
+                    <div class="botao-de-email">
+                       <a href="mailto:iniciativasegura@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-up" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
+                          </svg>
+                       </a>     
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Conselho tutelar </h2>
+                    <p>
+                        Tel: (21) 98909-1428
+                        Rua Carlos da Silva Costa, nº 32 - Campo Grande -
+                        Cep: 23050-230
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Centro de referência de assistência social </h2>
+                    <p>
+                        Tel: (21) 3403-5963
+                        Rua Viúva Dantas, nº 695 – Campo Grande -
+                        Cep: 23052-090
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Centro de Referência Especializado de Assistência Social </h2>
+                    <p>
+                        Tel: (21) 3292-4450
+                        Rua Cândido Magalhães nº 88 - Campo Grande -
+                        Cep: 23050-270                    
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- FIM DA SEÇÃO DE CONTATOS ADICIONAIS -->
+        
+        <!-- RODAPÉ DA PÁGINA -->
+        <footer>
+            <div class="conteudo-principal">
+              <div class="logo">
+                <a href="../HTML/home.html">
+                    <img src="../Imagens/Logo.png" alt="Logo do site">
+                </a>
+            </div>
+            
+            <ul class="footer-links">
+              <li id="link"><a href="../HTML/cadastro.html">Paradeiros</a></li>
+              <li id="link" class="link"><a href="../HTML/prevencao.html">Prevenção</a></li>
+              <li id="link" class="link"><a href="../HTML/quemSomos.html">Sobre nós</a></li>
+              <li id="link" class="link"><a href="../HTML/contato.html">Contatos</a></li>
+              <li id="link" class="link"><a href="../HTML/doar.html">Doar</a></li>
+            </ul>
+            
+            </div>
+            <div class="separador"></div> 
+          </footer>
+
+          <script src="../JS/script-navbar.js"></script>
+
+    </body> 
+    </html> 
